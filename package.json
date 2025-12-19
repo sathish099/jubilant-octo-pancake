@@ -1,0 +1,19 @@
+{
+  "name": "signature-menswear",
+  "version": "1.0.0",
+  "description": "Signature Menswear Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "npm run lint:html && npm run lint:css",
+    "lint:html": "html-validate index.html",
+    "lint:css": "stylelint style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "html-validate": "^10.5.0",
+    "stylelint": "^16.26.1",
+    "stylelint-config-standard": "^39.0.1"
+  }
+}
