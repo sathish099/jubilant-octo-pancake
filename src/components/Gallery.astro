@@ -1,0 +1,61 @@
+---
+const images = [
+  '/media/599966543_797058650046766_110172884477100251_n (1).jpg',
+  '/media/599966543_797058650046766_110172884477100251_n.jpg',
+  '/media/600324902_17843208057654235_2509095559859172054_n.jpg',
+  '/media/graphic-tshirt-trendy-design-mockup-presented-wooden-hanger-with-sapce-your-test.jpg',
+  '/media/portrait-young-couple-yellow_158595-5535.jpg',
+  '/media/sample-image-1.jpg',
+  '/media/sample-image-2.jpg',
+  '/media/sample-image-3.jpg',
+  '/media/sample-image-4.jpg',
+  '/media/sample-image-5.jpg'
+];
+---
+
+<section class="gallery">
+  <h2>Our Collection</h2>
+  <div class="gallery-grid">
+    {images.map(image => (
+      <div class="gallery-item">
+        <img src={image} alt="Clothing item" loading="lazy" />
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .gallery {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-item:hover {
+    transform: scale(1.05);
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+</style>

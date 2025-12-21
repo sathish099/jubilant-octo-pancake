@@ -2,57 +2,20 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Gallery from '../components/Gallery.astro';
 ---
 
 <Layout>
-	<Header />
-	<main>
-		<section id="home" class="hero" transition:animate="fade">
-			<div class="hero-content">
-				<h1>Elevate Your Style.</h1>
-				<p>Discover our curated collection of premium menswear.</p>
-				<a href="#shop" class="cta-button">Shop Now</a>
-			</div>
-		</section>
-
-		<section id="shop" class="featured-products">
-			<h2>Featured Products</h2>
-			<div class="product-grid">
-				<div class="product-card">
-					<img src="https://via.placeholder.com/300x400" alt="Product Image">
-					<h3>Classic Suit</h3>
-					<p class="price">₹12,999</p>
-				</div>
-				<div class="product-card">
-					<img src="https://via.placeholder.com/300x400" alt="Product Image">
-					<h3>Linen Shirt</h3>
-					<p class="price">₹2,499</p>
-				</div>
-				<div class="product-card">
-					<img src="https://via.placeholder.com/300x400" alt="Product Image">
-					<h3>Leather Loafers</h3>
-					<p class="price">₹4,999</p>
-				</div>
-				 <div class="product-card">
-					<img src="https://via.placeholder.com/300x400" alt="Product Image">
-					<h3>Slim-Fit Chinos</h3>
-					<p class="price">₹3,199</p>
-				</div>
-			</div>
-		</section>
-
-		<section id="about" class="about-us">
-			<div class="about-content">
-				<h2>About Signature Menswear</h2>
-				<p>We believe that style is a signature. At Signature Menswear, we're dedicated to providing high-quality, modern clothing for the discerning gentleman in Chennai. Our curated collections are designed to help you make a statement, whether you're in the boardroom or at a weekend brunch.</p>
-			</div>
-		</section>
-
-		<section id="contact" class="contact-us">
-			<h2>Get In Touch</h2>
-			<p>Have a question or want to learn more? Follow us on Instagram!</p>
-			<a href="https://www.instagram.com/sig_naturemenswear/" target="_blank" class="instagram-link">Follow us on Instagram</a>
-		</section>
-	</main>
-	<Footer />
+  <Header />
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to SigNature</h1>
+        <p>Discover the latest trends in menswear.</p>
+        <a href="#gallery" class="cta-button">Shop Now</a>
+      </div>
+    </section>
+    <Gallery />
+  </main>
+  <Footer />
 </Layout>
