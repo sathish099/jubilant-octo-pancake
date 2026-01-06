@@ -60,8 +60,29 @@ nav a {
     transition: color 0.3s ease;
 }
 
+nav a:focus-visible {
+    outline: 2px solid #007aff;
+    outline-offset: 2px;
+}
+
 nav a:hover {
     color: #007aff; /* Apple-like blue */
+}
+
+/* Skip Link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #007aff;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
 }
 
 /* Hero Section */
@@ -92,6 +113,11 @@ nav a:hover {
     text-decoration: none;
     font-weight: 500;
     transition: background-color 0.3s ease;
+}
+
+.cta-button:focus-visible {
+    outline: 2px solid #333;
+    outline-offset: 2px;
 }
 
 .cta-button:hover {
@@ -201,6 +227,11 @@ nav a:hover {
     transition: background-color 0.3s ease;
 }
 
+.instagram-link:focus-visible {
+    outline: 2px solid #007aff;
+    outline-offset: 2px;
+}
+
 .instagram-link:hover {
     background-color: #555;
 }
@@ -229,6 +260,11 @@ footer {
     text-decoration: none;
     margin: 0 0.5rem;
     font-weight: 500;
+}
+
+.social-links a:focus-visible {
+    outline: 2px solid #007aff;
+    outline-offset: 2px;
 }
 
 .social-links a:hover {
