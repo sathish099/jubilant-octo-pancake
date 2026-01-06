@@ -15,6 +15,26 @@ body {
     color: #333;
 }
 
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #007aff;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+:focus-visible {
+    outline: 2px solid #007aff;
+    outline-offset: 2px;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -197,6 +217,11 @@ footer {
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.attribution {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
 }
 
 .social-links a {
