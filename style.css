@@ -69,22 +69,6 @@ nav a:hover {
     color: #007aff; /* Apple-like blue */
 }
 
-/* Skip Link */
-.skip-link {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    background: #007aff;
-    color: white;
-    padding: 8px;
-    z-index: 100;
-    transition: top 0.3s;
-}
-
-.skip-link:focus {
-    top: 0;
-}
-
 /* Hero Section */
 .hero {
     background-color: #f5f5f7; /* Light gray background */
@@ -272,7 +256,7 @@ footer {
 }
 
 /* Responsive Design */
-@media (width <= 768px) {
+@media (max-width: 768px) {
     header {
         flex-direction: column;
         padding: 1rem;
@@ -302,6 +286,7 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 /* Trend Setter Section */
 .trend-setter {
     position: relative;
@@ -337,7 +322,7 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgb(0 0 0 / 40%);
     padding: 30px;
     border-radius: 8px;
     width: 80%;
@@ -348,44 +333,50 @@ footer {
     font-size: 3rem;
     margin-bottom: 15px;
     opacity: 0;
-    animation: slideUp 1.5s ease-out forwards;
+    animation: slide-up 1.5s ease-out forwards;
 }
 
 .trend-overlay p {
     font-size: 1.5rem;
     opacity: 0;
-    animation: fadeIn 2s ease-out 0.8s forwards;
+    animation: fade-in 2s ease-out 0.8s forwards;
 }
 
 /* Animations */
-@keyframes slideUp {
+
+@keyframes slide-up {
     from {
         transform: translateY(50px);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
     }
 }
 
-@keyframes fadeIn {
+@keyframes fade-in {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
 
 /* Responsive Adjustments for Trend Setter */
+
 @media (max-width: 768px) {
     .trend-setter {
         height: 300px;
     }
+
     .trend-overlay h2 {
         font-size: 2rem;
     }
+
     .trend-overlay p {
         font-size: 1rem;
     }
