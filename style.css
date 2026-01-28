@@ -19,7 +19,7 @@ body {
     position: absolute;
     top: -40px;
     left: 0;
-    background: #007aff;
+    background: #0056b3;
     color: white;
     padding: 8px;
     z-index: 100;
@@ -31,7 +31,7 @@ body {
 }
 
 :focus-visible {
-    outline: 2px solid #007aff;
+    outline: 2px solid #0056b3;
     outline-offset: 2px;
 }
 
@@ -61,12 +61,12 @@ nav a {
 }
 
 nav a:focus-visible {
-    outline: 2px solid #007aff;
+    outline: 2px solid #0056b3;
     outline-offset: 2px;
 }
 
 nav a:hover {
-    color: #007aff; /* Apple-like blue */
+    color: #0056b3; /* Brand blue */
 }
 
 /* Hero Section */
@@ -90,7 +90,7 @@ nav a:hover {
 
 .cta-button {
     display: inline-block;
-    background-color: #007aff;
+    background-color: #0056b3;
     color: #fff;
     padding: 0.8rem 2rem;
     border-radius: 2rem;
@@ -105,7 +105,7 @@ nav a:hover {
 }
 
 .cta-button:hover {
-    background-color: #0056b3;
+    background-color: #004494;
 }
 
 /* Featured Products Section */
@@ -212,7 +212,7 @@ nav a:hover {
 }
 
 .instagram-link:focus-visible {
-    outline: 2px solid #007aff;
+    outline: 2px solid #0056b3;
     outline-offset: 2px;
 }
 
@@ -247,12 +247,12 @@ footer {
 }
 
 .social-links a:focus-visible {
-    outline: 2px solid #007aff;
+    outline: 2px solid #0056b3;
     outline-offset: 2px;
 }
 
 .social-links a:hover {
-    color: #007aff;
+    color: #0056b3;
 }
 
 /* Responsive Design */
@@ -322,7 +322,7 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background-color: rgb(0 0 0 / 40%);
+    background-color: rgb(0 0 0 / 70%);
     padding: 30px;
     border-radius: 8px;
     width: 80%;
