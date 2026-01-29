@@ -32,5 +32,10 @@ The following tasks were completed to improve code quality and compliance:
 3.  **Project Metadata:**
     - Updated `package.json` author to "Signature Menswear Team".
 
+4.  **Accessibility & Readability Improvements:**
+    - Updated primary brand color to `#0056b3` (darker blue) and hover state to `#004494` to meet WCAG AA contrast standards.
+    - Increased trend overlay background opacity to 70% to improve text readability over video.
+
 ## Current Status
-All linting checks (`npm run lint`) pass successfully. The website is verified to be clean and follows the established coding standards.
+**Verified on Jan 26, 2026:**
+All linting checks (`npm run lint`) pass successfully. The website is verified to be clean, follows established coding standards, and meets WCAG AA contrast requirements.
